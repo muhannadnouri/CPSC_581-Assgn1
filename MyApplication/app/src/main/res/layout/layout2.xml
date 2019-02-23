@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/sub2pewds"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="230dp"
+            android:layout_height="52dp"
+            android:text="SUB 2 PEW DIE PIE 2 REMOVE ADS "
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or pay 4.99 a month for no popups by clicking @android:string/httpErrorBadUrl"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="390dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limited time offer of 9.99 a month for no ads no pop ups SUBSCRIBE NOW!"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="438dp" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

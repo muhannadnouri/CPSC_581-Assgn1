@@ -12,29 +12,21 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    int counter = 0;
 
     List<String> a = new ArrayList<String>();
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //WebView myWebView = (WebView) findViewById(R.id.webview);
-        //myWebView.loadUrl("https://www.youtube.com/watch?v=Cv1RJTHf5fk&t=66s");
 
 
     //Click on shit to close it...
-    final ImageView imageReebok =(ImageView) findViewById(R.id.imageReebok);
-    final ImageView imageWarning =(ImageView) findViewById(R.id.imageWarning);
-    final ImageView imageZeus =(ImageView) findViewById(R.id.imageZeus);
-    final ImageView imageHome =(ImageView) findViewById(R.id.imageHome);
-    final ImageView imageWinner =(ImageView) findViewById(R.id.imageWinner);
-
-
-
+    final ImageView imageReebok = (ImageView) findViewById(R.id.imageReebok);
+    final ImageView imageWarning = (ImageView) findViewById(R.id.imageWarning);
+    final ImageView imageZeus = (ImageView) findViewById(R.id.imageZeus);
+    final ImageView imageHome = (ImageView) findViewById(R.id.imageHome);
+    final ImageView imageWinner = (ImageView) findViewById(R.id.imageWinner);
 
 
     imageReebok.setOnClickListener( new View.OnClickListener()
@@ -42,20 +34,12 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             imageReebok.setVisibility(View.GONE);
-            //Intent intent = new Intent();
-            //intent.setAction(Intent.ACTION_VIEW);
-            //intent.addCategory(Intent.CATEGORY_BROWSABLE);
-            //intent.setData(Uri.parse("https://trumpbutton.netlify.com"));
-            //startActivity(intent);
-            //counter++;
 
             a.add("reebok");
             if(a.indexOf("reebok") == 0 && a.indexOf("warning") == 1 && a.indexOf("zeus") == 2) {
                 android.os.Process.killProcess(android.os.Process.myPid());
                 System.exit(1);
             }
-
-
         }
     });
 
@@ -64,19 +48,12 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             imageWarning.setVisibility(View.GONE);
-            //Intent intent = new Intent();
-            //intent.setAction(Intent.ACTION_VIEW);
-            //intent.addCategory(Intent.CATEGORY_BROWSABLE);
-            //intent.setData(Uri.parse("https://trumpbutton.netlify.com"));
-            //startActivity(intent);
-            //counter++;
 
             a.add("warning");
             if(a.indexOf("reebok") == 0 && a.indexOf("warning") == 1 && a.indexOf("zeus") == 2) {
                 android.os.Process.killProcess(android.os.Process.myPid());
                 System.exit(1);
             }
-
         }
     });
 
@@ -85,12 +62,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             imageZeus.setVisibility(View.GONE);
-            //Intent intent = new Intent();
-            //intent.setAction(Intent.ACTION_VIEW);
-            //intent.addCategory(Intent.CATEGORY_BROWSABLE);
-            //intent.setData(Uri.parse("https://trumpbutton.netlify.com"));
-            //startActivity(intent);
-            //counter++;
 
             a.add("zeus");
             if(a.indexOf("reebok") == 0 && a.indexOf("warning") == 1 && a.indexOf("zeus") == 2) {
@@ -101,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent myIntent = new Intent(MainActivity.this, SecondWindow.class);
                 MainActivity.this.startActivity(myIntent);
             }
-
         }
     });
 
@@ -110,12 +80,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             imageHome.setVisibility(View.GONE);
-            //Intent intent = new Intent();
-            //intent.setAction(Intent.ACTION_VIEW);
-            //intent.addCategory(Intent.CATEGORY_BROWSABLE);
-            //intent.setData(Uri.parse("https://trumpbutton.netlify.com"));
-            //startActivity(intent);
-            //counter++;
 
             a.add("home");
             if(a.indexOf("reebok") == 0 && a.indexOf("warning") == 1 && a.indexOf("zeus") == 2) {
@@ -137,12 +101,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             imageWinner.setVisibility(View.GONE);
-            //Intent intent = new Intent();
-            //intent.setAction(Intent.ACTION_VIEW);
-            //intent.addCategory(Intent.CATEGORY_BROWSABLE);
-            //intent.setData(Uri.parse("https://trumpbutton.netlify.com"));
-            //startActivity(intent);
-            //counter++;
 
             a.add("winner");
             if(a.indexOf("reebok") == 0 && a.indexOf("warning") == 1 && a.indexOf("zeus") == 2) {
@@ -156,20 +114,6 @@ public class MainActivity extends AppCompatActivity {
         }
     });
 
-    /*myWebView.setOnClickListener( new View.OnClickListener ()
-    {
-        @Override
-        public void onClick(View v) {
-
-        }
-    });*/
-
-    if(counter >= 4 )
-    {
-        //Boss fight
-        startActivity(new Intent(MainActivity.this , SecondWindow.class));
-
-    }
 
 
 }

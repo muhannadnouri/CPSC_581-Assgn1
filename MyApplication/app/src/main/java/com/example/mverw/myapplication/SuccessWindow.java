@@ -2,24 +2,17 @@ package com.example.mverw.myapplication;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.content.Intent;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.webkit.WebView;
-import android.widget.ImageView;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
 
-public class SecondWindow extends AppCompatActivity  {
+public class SuccessWindow extends AppCompatActivity  {
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout);
+        setContentView(R.layout.activity_success);
 
 
         Timer timer = new Timer();
@@ -37,7 +30,7 @@ public class SecondWindow extends AppCompatActivity  {
 
 
         //Boss fight
-            //startActivity(new Intent(SecondWindow.this , ThirdWindow.class));
+            //startActivity(new Intent(SuccessWindow.this , ThirdWindow.class));
 
 
     }

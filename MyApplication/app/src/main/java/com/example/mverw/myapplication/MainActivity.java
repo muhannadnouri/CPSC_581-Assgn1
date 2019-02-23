@@ -1,11 +1,9 @@
 package com.example.mverw.myapplication;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.ImageView;
 //import android.app.ActionBar;
 import java.util.List;
@@ -13,7 +11,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    List<String> a = new ArrayList<String>();
+    List<String> imgList = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,73 +20,69 @@ public class MainActivity extends AppCompatActivity {
 
 
     //Click on shit to close it...
-    final ImageView imageReebok = (ImageView) findViewById(R.id.imageReebok);
-    final ImageView imageWarning = (ImageView) findViewById(R.id.imageWarning);
-    final ImageView imageZeus = (ImageView) findViewById(R.id.imageZeus);
-    final ImageView imageHome = (ImageView) findViewById(R.id.imageHome);
-    final ImageView imageWinner = (ImageView) findViewById(R.id.imageWinner);
+    final ImageView image1 = (ImageView) findViewById(R.id.imageReebok);
+    final ImageView image2 = (ImageView) findViewById(R.id.imageWarning);
+    final ImageView image3 = (ImageView) findViewById(R.id.imageZeus);
+    final ImageView image4 = (ImageView) findViewById(R.id.imageHome);
+    final ImageView image5 = (ImageView) findViewById(R.id.imageWinner);
 
 
-    imageReebok.setOnClickListener( new View.OnClickListener()
+
+
+    image1.setOnClickListener( new View.OnClickListener()
     {
         @Override
         public void onClick(View v) {
-            imageReebok.setVisibility(View.GONE);
+            image1.setVisibility(View.GONE);
 
-            a.add("reebok");
-            if(a.indexOf("reebok") == 0 && a.indexOf("warning") == 1 && a.indexOf("zeus") == 2) {
-                android.os.Process.killProcess(android.os.Process.myPid());
-                System.exit(1);
-            }
-        }
-    });
+            imgList.add("img0");
 
-    imageWarning.setOnClickListener( new View.OnClickListener()
-    {
-        @Override
-        public void onClick(View v) {
-            imageWarning.setVisibility(View.GONE);
-
-            a.add("warning");
-            if(a.indexOf("reebok") == 0 && a.indexOf("warning") == 1 && a.indexOf("zeus") == 2) {
-                android.os.Process.killProcess(android.os.Process.myPid());
-                System.exit(1);
-            }
-        }
-    });
-
-    imageZeus.setOnClickListener( new View.OnClickListener()
-    {
-        @Override
-        public void onClick(View v) {
-            imageZeus.setVisibility(View.GONE);
-
-            a.add("zeus");
-            if(a.indexOf("reebok") == 0 && a.indexOf("warning") == 1 && a.indexOf("zeus") == 2) {
-                //android.os.Process.killProcess(android.os.Process.myPid());
-                //System.exit(1);
-
-                // launch success activity
-                Intent myIntent = new Intent(MainActivity.this, SecondWindow.class);
+            if(!(imgList.indexOf("img0") == 0)) {
+                Intent myIntent = new Intent(MainActivity.this, MainActivity.class);
                 MainActivity.this.startActivity(myIntent);
             }
         }
     });
 
-    imageHome.setOnClickListener( new View.OnClickListener()
+    image2.setOnClickListener( new View.OnClickListener()
     {
         @Override
         public void onClick(View v) {
-            imageHome.setVisibility(View.GONE);
+            image2.setVisibility(View.GONE);
 
-            a.add("home");
-            if(a.indexOf("reebok") == 0 && a.indexOf("warning") == 1 && a.indexOf("zeus") == 2) {
-                android.os.Process.killProcess(android.os.Process.myPid());
-                System.exit(1);
+            imgList.add("img1");
+
+            if(!(imgList.indexOf("img1") == 1)) {
+                Intent myIntent = new Intent(MainActivity.this, MainActivity.class);
+                MainActivity.this.startActivity(myIntent);
             }
-            else
-            {
-                System.out.println("Wrong sequence!");
+        }
+    });
+
+    image3.setOnClickListener( new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v) {
+            image3.setVisibility(View.GONE);
+
+            imgList.add("img2");
+
+            if(!(imgList.indexOf("img2") == 2)) {
+                Intent myIntent = new Intent(MainActivity.this, MainActivity.class);
+                MainActivity.this.startActivity(myIntent);
+            }
+        }
+    });
+
+    image4.setOnClickListener( new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v) {
+            image4.setVisibility(View.GONE);
+
+            imgList.add("img3");
+
+            if(!(imgList.indexOf("img3") == 3)) {
                 Intent myIntent = new Intent(MainActivity.this, MainActivity.class);
                 MainActivity.this.startActivity(myIntent);
             }
@@ -96,26 +90,28 @@ public class MainActivity extends AppCompatActivity {
         }
     });
 
-    imageWinner.setOnClickListener( new View.OnClickListener()
+    image5.setOnClickListener( new View.OnClickListener()
     {
         @Override
         public void onClick(View v) {
-            imageWinner.setVisibility(View.GONE);
+            image5.setVisibility(View.GONE);
 
-            a.add("winner");
-            if(a.indexOf("reebok") == 0 && a.indexOf("warning") == 1 && a.indexOf("zeus") == 2) {
-                android.os.Process.killProcess(android.os.Process.myPid());
-                System.exit(1);
+            imgList.add("img4");
+
+            if(!(imgList.indexOf("img4") == 4)) {
+                Intent myIntent = new Intent(MainActivity.this, MainActivity.class);
+                MainActivity.this.startActivity(myIntent);
             }
-            else
-            {
-                System.out.println("Wrong sequence!");
+            else {
+                // launch success activity
+                Intent myIntent = new Intent(MainActivity.this, SuccessWindow.class);
+                MainActivity.this.startActivity(myIntent);
             }
         }
     });
 
 
 
-}
+    }
 
 }

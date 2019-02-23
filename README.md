@@ -19,4 +19,3 @@ CPSC 581 (Human-Interaction II) - Assignment 1
 - Michael Verwaayen
 - Mitchell Rudy
 - Muhannad Nouri
-

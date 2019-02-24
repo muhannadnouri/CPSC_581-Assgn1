@@ -29,6 +29,7 @@
     "android": {
       "package": "com.CPSC581.Project1Key"
     },
-    "description": "CPSC 581 Project 1"
+    "description": "CPSC 581 Project 1",
+    "githubUrl": "https://github.com/muhannadnouri/CPSC_581-Assgn1/tree/master/SensorApplication"
   }
 }

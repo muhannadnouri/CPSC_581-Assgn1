@@ -9,6 +9,7 @@ export default class App extends React.Component {
     super(props);
     
     this.state = {
+      soundLoaded: false,
       unlockKey: 7,
       unlockSensitivity: 5,
       action: false,
@@ -21,15 +22,14 @@ export default class App extends React.Component {
     this.cardSound = new Audio.Sound();
     this.zeldaSound = new Audio.Sound();
     this.errorSound = new Audio.Sound();
-    try{
-      this.keySound.loadAsync(require('./assets/KeyUnlock.mp3'));
-      this.cardSound.loadAsync(require('./assets/CardUnlock.mp3'));
-      this.zeldaSound.loadAsync(require('./assets/ZeldaChest.mp3'));
-      this.errorSound.loadAsync(require('./assets/Error.mp3'));
-    }
-    catch(e){
-      //Do nothing
-    }
+    this.keySound.loadAsync(require('./assets/KeyUnlock.mp3'));
+    this.cardSound.loadAsync(require('./assets/CardUnlock.mp3'));
+    this.zeldaSound.loadAsync(require('./assets/ZeldaChest.mp3'));
+    this.errorSound.loadAsync(require('./assets/Error.mp3'));
+    Promise.all([this.keySound,this.cardSound,this.zeldaSound,this.errorSound])
+      .then(()=>{
+        this.setState({soundLoaded:true})
+      });
   }  
   
   componentDidMount() {
@@ -68,10 +68,10 @@ export default class App extends React.Component {
       // If we move to right, reset state
       if (x < 0){
         this.setState({action:false});
-        this.keySound.stopAsync();
-        this.keySound.setPositionAsync(0);
-        this.cardSound.stopAsync();
-        this.cardSound.setPositionAsync(0);
+        this.state.soundLoaded && this.keySound.stopAsync();
+        this.state.soundLoaded && this.keySound.setPositionAsync(0);
+        this.state.soundLoaded && this.cardSound.stopAsync();
+        this.state.soundLoaded && this.cardSound.setPositionAsync(0);
       }
     });
   }

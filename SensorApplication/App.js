@@ -18,13 +18,18 @@ export default class App extends React.Component {
 
     // Loading in Sound
     this.keySound = new Audio.Sound();
-    this.keySound.loadAsync(require('./assets/KeyUnlock.mp3'));
     this.cardSound = new Audio.Sound();
-    this.cardSound.loadAsync(require('./assets/CardUnlock.mp3'));
     this.zeldaSound = new Audio.Sound();
-    this.zeldaSound.loadAsync(require('./assets/ZeldaChest.mp3'));
     this.errorSound = new Audio.Sound();
-    this.errorSound.loadAsync(require('./assets/Error.mp3'));
+    try{
+      this.keySound.loadAsync(require('./assets/KeyUnlock.mp3'));
+      this.cardSound.loadAsync(require('./assets/CardUnlock.mp3'));
+      this.zeldaSound.loadAsync(require('./assets/ZeldaChest.mp3'));
+      this.errorSound.loadAsync(require('./assets/Error.mp3'));
+    }
+    catch(e){
+      //Do nothing
+    }
   }  
   
   componentDidMount() {

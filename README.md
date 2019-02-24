@@ -12,7 +12,7 @@ CPSC 581 (Human-Interaction II) - Assignment 1
  * In this version, the user is shown a host of different advertisments. Once they click on it in the correct order then the phone will display success message and unlock the phone. An incorrect combination will result in motivational advertisements and a times delay before another unlock attempt
  
 **2. Sensor Unlock**
- * In this version, the user needs to select the correct key out of all available keys and achieve the correct motion.
+ * In this version, the user needs to select the correct key out of all available keys and achieve the correct motion. For a correct unlock, navigate to the final page for the "Zelda" key, and unlock via a left twist of the device.
 
 # Contributing
 - Alexander Lam

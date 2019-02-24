@@ -38,8 +38,9 @@ public class MainActivity extends AppCompatActivity {
             imgList.add("img0");
 
             if(!(imgList.indexOf("img0") == 0)) {
-                Intent myIntent = new Intent(MainActivity.this, MainActivity.class);
+                Intent myIntent = new Intent(MainActivity.this, TimeWaste.class);
                 MainActivity.this.startActivity(myIntent);
+
             }
         }
     });
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             imgList.add("img1");
 
             if(!(imgList.indexOf("img1") == 1)) {
-                Intent myIntent = new Intent(MainActivity.this, MainActivity.class);
+                Intent myIntent = new Intent(MainActivity.this, TimeWaste.class);
                 MainActivity.this.startActivity(myIntent);
             }
         }
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             imgList.add("img2");
 
             if(!(imgList.indexOf("img2") == 2)) {
-                Intent myIntent = new Intent(MainActivity.this, MainActivity.class);
+                Intent myIntent = new Intent(MainActivity.this, TimeWaste.class);
                 MainActivity.this.startActivity(myIntent);
             }
         }
@@ -83,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             imgList.add("img3");
 
             if(!(imgList.indexOf("img3") == 3)) {
-                Intent myIntent = new Intent(MainActivity.this, MainActivity.class);
+                Intent myIntent = new Intent(MainActivity.this, TimeWaste.class);
                 MainActivity.this.startActivity(myIntent);
             }
 
@@ -99,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
             imgList.add("img4");
 
             if(!(imgList.indexOf("img4") == 4)) {
-                Intent myIntent = new Intent(MainActivity.this, MainActivity.class);
+                Intent myIntent = new Intent(MainActivity.this, TimeWaste.class);
                 MainActivity.this.startActivity(myIntent);
             }
             else {

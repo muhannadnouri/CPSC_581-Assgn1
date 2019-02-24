@@ -18,6 +18,7 @@
         </activity>
         <activity android:label="@string/app_name" android:name=".SuccessWindow" ></activity>
         <activity android:name=".ThirdWindow" ></activity>
+        <activity android:name=".TimeWaste" ></activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

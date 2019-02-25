@@ -23,6 +23,7 @@ CPSC 581 (Human-Interaction II) - Assignment 1
  
 **2. Sensor Unlock**
  * In this version, the user needs to select the correct key out of all available keys and achieve the correct motion. For a correct unlock, navigate to the final page for the "Zelda" key, and unlock via a left twist of the device.
+Video Demonstartion: https://www.youtube.com/watch?v=-o7-d0jJUZw&feature=youtu.be
 
 # Contributing
 - Alexander Lam

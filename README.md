@@ -20,6 +20,7 @@ CPSC 581 (Human-Interaction II) - Assignment 1
 
 **1. Touch Unlock**
  * In this version, the user is shown a host of different advertisments. Once they click on it in the correct order then the phone will display success message and unlock the phone. An incorrect combination will result in motivational advertisements and a times delay before another unlock attempt.
+ * [Video Demonstration](https://www.youtube.com/watch?v=xMwIyFzVys0&feature=youtu.be)
  
  **Correct Order**
 - Reebok

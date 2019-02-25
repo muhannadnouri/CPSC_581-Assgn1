@@ -3,7 +3,7 @@ CPSC 581 (Human-Interaction II) - Assignment 1
 
 # Deployment
 ## Touch Unlock
-- To run the application, download [Android Studio]() from the official website.
+- To run the application, download [Android Studio](https://developer.android.com/studio/?gclid=EAIaIQobChMIkNeyiofW4AIVtBx9Ch3RcAxpEAAYASAAEgKE5fD_BwE) from the official website.
 - Choose Nexus 5X as the emulator device running Android 9, API 28
 - Alternatively, connect your Android phone to the computer and select it as the target device
 
@@ -14,7 +14,7 @@ CPSC 581 (Human-Interaction II) - Assignment 1
 - Scan this QR Code with Expo to launch app:
 - ![QRCode for Sensor App](/SensorApplication/ExpoQRCode.png)
 ### Direct Install
-- To run the application, install the [CPSC581Key-signed.apk](/SensorApplication/CPSC581Key-signed.apk) on an android device.
+- To run the application, install the [CPSC581Key.apk](/SensorApplication/CPSC581Key.apk) on an android device.
 
 # Functionality
 

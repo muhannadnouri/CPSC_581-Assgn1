@@ -20,7 +20,7 @@ public class TimeWaste extends AppCompatActivity {
 
         VideoView mVideoView2 = (VideoView)findViewById(R.id.videoView);
 
-        String uriPath2 = "android.resource://com.example.mverw.myapplication/"+R.raw.rick;
+        String uriPath2 = "android.resource://com.example.mverw.myapplication/"+R.raw.taidaddy;
         Uri uri2 = Uri.parse(uriPath2);
         mVideoView2.setVideoURI(uri2);
         mVideoView2.requestFocus();
@@ -31,6 +31,7 @@ public class TimeWaste extends AppCompatActivity {
                 // you suffer enough
                 Intent myIntent = new Intent(TimeWaste.this, MainActivity.class);
                 TimeWaste.this.startActivity(myIntent);
+                finish();
             }
         });
 

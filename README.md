@@ -19,11 +19,20 @@ CPSC 581 (Human-Interaction II) - Assignment 1
 # Functionality
 
 **1. Touch Unlock**
- * In this version, the user is shown a host of different advertisments. Once they click on it in the correct order then the phone will display success message and unlock the phone. An incorrect combination will result in motivational advertisements and a times delay before another unlock attempt
+ * In this version, the user is shown a host of different advertisments. Once they click on it in the correct order then the phone will display success message and unlock the phone. An incorrect combination will result in motivational advertisements and a times delay before another unlock attempt.
+ 
+ **Correct Order**
+- Reebok
+- Copy/Paste 
+- Lose Weight 
+- Game of War
+- Windows Prompt
+- Bud Light
+- Local Singles
  
 **2. Sensor Unlock**
  * In this version, the user needs to select the correct key out of all available keys and achieve the correct motion. For a correct unlock, navigate to the final page for the "Zelda" key, and unlock via a left twist of the device.
-Video Demonstration: https://www.youtube.com/watch?v=-o7-d0jJUZw&feature=youtu.be
+* [Video Demonstration](https://www.youtube.com/watch?v=-o7-d0jJUZw&feature=youtu.be)
 
 # Contributing
 - Alexander Lam
